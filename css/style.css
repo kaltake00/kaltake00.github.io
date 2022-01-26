@@ -119,6 +119,7 @@ body{
     background: #16c0f0;
     color: #fff;
     border: 1px solid #16c0f0;
+    margin-right: 20px;
 }
 
 .welcome-socials{
@@ -155,6 +156,20 @@ body{
     background: rgba(22, 192, 240, .6);
 }
 
+.welcome-socials li{
+    margin-bottom: 5px;
+}
 .welcome-socials li a {
     color: #fff;
+    transition: all .3s ease;
+}
+.welcome-socials li a:hover{
+    color: #16c0f0;
+}
+
+
+/* FullPage Navigation */ 
+
+#fp-nav ul li a span {
+    background: #16c0f0 !important;
 }
