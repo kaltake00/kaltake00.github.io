@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body{
+    font-family: 'Montserrat';
+}
+
+.navbar {
+    background: #2b3d4f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.logo-text{
+    color: #fff;
+}
+
+.menu-toggle{
+    position: relative;
+    padding: 10px 0;
+    float: right;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar{
+    display: block;
+    height: 2px;
+    background-color: #16c0f0;
+}
+.menu-toggle .bar:first-child{
+    width: 30px;
+    margin: auto;
+}
+.menu-toggle .bar:nth-child(2) {
+    margin: 6px 0;
+    width: 24px;
+    margin-left: 6px;
+}
+
+#particles-js{
+    background: linear-gradient(
+        0deg
+        , rgb(12 1 1), rgb(43 61 79 / 80%)), url(../images/welcomebanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+}
+
+.intro{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.intro h1{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.intro h3{
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+
+/* BUTTONS */
+.home .intro .main-btn {
+    margin: 0 10px;
+    min-width: 160px;
+}
+.main-btn {
+    display: inline-block;
+    min-width: 145px;
+    background: transparent;
+    color: #16c0f0;
+    border: 1px solid #16c0f0;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 50px;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    z-index: 9999;
+}
+.main-btn:hover{
+    color: #fff;
+    background-color: #16c0f0;
+    border: 1px solid #16c0f0;
+}
+.custom-btn {
+    background: #16c0f0;
+    color: #fff;
+    border: 1px solid #16c0f0;
+}
+
+.welcome-socials{
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    color: #fff;
+}
+.welcome-socials::before{
+    content: 'Follow Me';
+    position: absolute;
+    top: -130px;
+    left: -36px;
+    font-size: 13px;
+    display: block;
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    white-space: nowrap;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.welcome-socials::after{
+    content: '';
+    position: absolute;
+    top: -65px;
+    left: 7px;
+    width: 2px;
+    height: 52px;
+    background: rgba(22, 192, 240, .6);
+}
+
+.welcome-socials li a {
+    color: #fff;
+}
