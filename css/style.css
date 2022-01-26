@@ -173,3 +173,19 @@ body{
 #fp-nav ul li a span {
     background: #16c0f0 !important;
 }
+
+/*********************************/
+/******* ABOUT ME PAGE ***********/
+/*********************************/
+
+.about-me {
+    background-color: rgb(43, 61, 79);
+    padding: 100px 0;
+    color: #fff;
+}
+
+.about-me .about-image {
+    padding: 7px;
+    background: linear-gradient(-50deg, rgba(170, 170, 170, .1) 45%, transparent 25%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
