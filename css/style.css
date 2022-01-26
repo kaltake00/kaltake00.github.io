@@ -73,7 +73,9 @@ body{
     flex-direction: column;
     color: #fff;
 }
-
+.intro .typed{
+    font-family: 'Courier Prime', monospace;
+}
 .intro h1{
     font-size: 64px;
     font-weight: 700;
