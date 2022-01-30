@@ -389,3 +389,7 @@ body{
     float: left;
     clear: both;
 }
+.resume .timeline ul li:nth-child(even) .timeline-content {
+    float: right;
+    clear: both;
+}
