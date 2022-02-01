@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: 'Montserrat';
+    overflow: hidden;
 }
 
 .navbar {
@@ -330,12 +338,24 @@ body{
     z-index: 6;
     background-color: rgb(38, 52, 70);
 }
+.resume .container{
+    padding: 100px 0;
+}
 
 .resume .timeline {
     position: relative;
     width: 100%;
     z-index: 1;
+    height: 100%;
 }
+
+.resume .timeline ul {
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
 .resume .timeline:before {
     content: '';
     position: absolute;
@@ -350,6 +370,7 @@ body{
 }
 .resume .timeline ul li {
     position: relative;
+    overflow: hidden;
 }
 
 .resume .timeline ul li:before {
@@ -376,10 +397,16 @@ body{
     -webkit-box-shadow: 0 0 0 0 rgb(22 192 240 / 60%);
     box-shadow: 0 0 0 0 rgb(22 192 240 / 60%);
 }
+
+.resume .timeline ul li:hover:before {
+    background-color: #25aceb;
+    border: none;
+}
+
 .resume .timeline ul li .timeline-content {
     position: relative;
     width: 47%;
-    background: #2b3d4f;
+    background: #2B3D4F;
     text-align: center;
     border: 3px solid #374757;
     box-shadow: 0 4px 5px rgb(37 50 66 / 70%);
@@ -392,4 +419,48 @@ body{
 .resume .timeline ul li:nth-child(even) .timeline-content {
     float: right;
     clear: both;
+}
+
+.resume .timeline ul li .timeline-content .timeline-icon {
+    position: absolute;
+    top: 45px;
+    left: 11px;
+    font-size: 78px;
+    transform: rotate(-30deg);
+    opacity: .12;
+    color: #5e7184;
+}
+
+.resume .timeline ul li .timeline-content h4 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: #16c0f0;
+}
+
+.resume .timeline ul li .timeline-content p:first-of-type {
+    color: #c7c5c7;
+    letter-spacing: .7px;
+    font-size: 13px;
+    margin: 0 20px 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #374757;
+}
+
+.resume .timeline ul li .timeline-content p:first-of-type i {
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.resume .timeline ul li .timeline-content .text {
+    color: #c7c5c7;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 20px 15px;
+    margin: 0;
 }
