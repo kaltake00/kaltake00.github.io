@@ -480,33 +480,40 @@ body{
     height: 350px;
     overflow: hidden;
     position: relative;
-    border: 2px solid #b3b3b3;
-    border-radius: 1px;
+    /* border: 2px solid #b3b3b3; */
+    border-radius: 70px;
     margin: 0 auto;
 }
-.pf-item-screen img {
-    bottom: -565px;
+
+.pf-card-inner{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgb(2 1 2 / 73%)),
+    url(../images/portfolio-imgs/flower-power.jpg);
     width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 0;
-    margin:0;
-    padding:0;
-    -webkit-transition: top 11s;
-    -moz-transition: top 11s;
-    -ms-transition: top 11s;
-    -o-transition: top 11s;
-    transition: bottom 11s;
-}
-.pf-item-screen:hover img {
-    bottom: 0;
-    -webkit-transition: all 11s;
-    -moz-transition: all 11s;
-    -ms-transition: all 11s;
-    -o-transition: all 11s;
-    transition: all 11s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: left center; 
 }
 
+.pf-card-inner h3{
+    color: white;
+    font-size: 32px;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01;width: 100%; height: 100%;}
+    100% { opacity: 0;width: 0; height: 0;}
+}
+
+.pf-item-screen:hover .pf-card-inner h3{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
 .pf-item-screen .overlay{
     position: absolute;
     display:flex;
@@ -515,10 +522,12 @@ body{
     height: 0;
     background-color: #5e7184d1;
     z-index: 2;
-    transition: all .7s ease;
+    transition: all .9s ease;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    top: 0;
+    height: 0;
 }
 .pf-item-screen:hover .overlay{
     height: 100%;
@@ -536,8 +545,6 @@ body{
     margin-bottom: 15px;
 }
 
-
-
 .pf-item-screen .overlay .item-icons a {
     display: inline-block;
     width: 43px;
@@ -550,4 +557,15 @@ body{
     font-size: 20px;
     text-align: center;
     border-radius: 50%;
+}
+
+.pf-card-inner.flower-power{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgb(2 1 2 / 73%)),
+    url(../images/portfolio-imgs/flower-power.jpg);
+}
+.pf-card-inner.gbm-group{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(57, 61, 3, 0.73)),
+    url(../images/portfolio-imgs/gbm-group.jpg);
 }
