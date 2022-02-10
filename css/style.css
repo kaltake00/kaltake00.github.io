@@ -473,6 +473,7 @@ body{
 
 .pf-item{
     position: relative;
+    margin-bottom: 35px;
 }
 .pf-item-screen {
     display: block;
@@ -568,4 +569,24 @@ body{
     background-image: 
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(57, 61, 3, 0.73)),
     url(../images/portfolio-imgs/gbm-group.jpg);
+}
+.pf-card-inner.garderoba{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(41, 35, 2, 0.73)),
+    url(../images/portfolio-imgs/garderoba.jpg);
+}
+.pf-card-inner.oriorMedia{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(3, 72, 75, 0.73)),
+    url(../images/portfolio-imgs/oriorMedia.jpg);
+}
+.pf-card-inner.widerInc{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(85, 8, 5, 0.73)),
+    url(../images/portfolio-imgs/widerInc.jpg);
+}
+.pf-card-inner.searchWelt{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(49, 17, 80, 0.73)),
+    url(../images/portfolio-imgs/searchWelt.jpg);
 }
