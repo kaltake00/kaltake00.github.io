@@ -152,8 +152,15 @@
 
                 <!-- Modal content -->
                 <div class="previewModal-content">
-                  <span class="close">&times;</span>
-                  <p>Some text in the Modal..</p>
+                  <!-- <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p> -->
+                  <div class="previewer-header">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                  <div class="resizable-frame" >
+                    <iframe id="previewer" class="website-previewer" src="https://www.flowerpowercoffee.com/" name="search_iframe" frameborder="0"></iframe>
+                  </div>
                 </div>
               
             </div>
@@ -176,7 +183,7 @@
                                     <h3>CBD Coffee Shop</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" id="openModalBtn" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://www.flowerpowercoffee.com/" target="search_iframe" class="icon-img" title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/FlowerPowerCBDCoffee/"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -194,7 +201,7 @@
                                     <h3>Office of Geodetic Surveying</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" href="images/portfolio/item-1.jpg" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://test.izradawebstranica.org/" target="search_iframe" class="icon-img"  title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/gbmgroupsarajevo"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -212,7 +219,7 @@
                                     <h3>Online Clothing Store</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" href="images/portfolio/item-1.jpg" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://shop.izradawebstranica.org/" target="search_iframe" class="icon-img" title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/gbmgroupsarajevo"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -230,7 +237,7 @@
                                     <h3>Digital Agency</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" href="images/portfolio/item-1.jpg" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://oriormedia.com/" target="search_iframe" class="icon-img" title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/gbmgroupsarajevo"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -248,7 +255,7 @@
                                     <h3>Freight Trucking company</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" href="images/portfolio/item-1.jpg" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://widerinc.net/" target="search_iframe" class="icon-img" title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/gbmgroupsarajevo"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -266,7 +273,7 @@
                                     <h3>German Digital Agency</h2>
                                 </div>
                                 <div class="item-icons">
-                                    <a class="icon-img" href="images/portfolio/item-1.jpg" title="view"><i class="fa fa-search-plus"></i></a>
+                                    <a href="https://searchwelt24.de/" target="search_iframe" class="icon-img" title="view"><i class="fa fa-search-plus"></i></a>
                                     <a href="https://www.facebook.com/gbmgroupsarajevo"><i class="fa fa-facebook" title="facebook link"></i></a>
                                 </div>
                             </div>
@@ -304,17 +311,27 @@
 
     <script>
         var modal = document.getElementById("previewModal");
-
+        
         // Get the button that opens the modal
-        var btn = document.getElementById("openModalBtn");
+
+        // var btn = document.getElementById("openModalBtn");
+        var btn = document.getElementsByClassName("icon-img");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks on the button, open the modal
         btn.onclick = function() {
+            console.log('Modal should be opened already...')
             modal.style.display = "block";
         }
+
+
+        Array.prototype.forEach.call(btn, function(element) {
+            element.addEventListener('click', function() {
+                modal.style.display = "block";
+            });
+        });
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
