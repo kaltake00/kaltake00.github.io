@@ -614,7 +614,6 @@ body{
   .previewModal-content {
     background-color: #fefefe;
     /* margin: 15% auto; 15% from the top and centered */
-    padding: 20px 0px;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
     height: 100%;
@@ -638,6 +637,8 @@ body{
   .resizable-frame{
       width: 100%;
       height: 100%;
+      display: flex;
+      justify-content: center;
   }
 
   .website-previewer{
@@ -648,8 +649,25 @@ body{
   .previewer-header{
     background-color: #333d46;
     padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .previewer-header .devices{
+    display: flex;
+    justify-content: center;
+    color: #fff;
   }
   .previewer-header p{
       color: #fff;
       margin-bottom: 0px;;
   }
+  .previewer-header .devices .scalable-button{
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.previewer-header .devices .scalable-button:hover{
+    color:#16c0f0;
+}
