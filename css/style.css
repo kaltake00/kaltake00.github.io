@@ -783,3 +783,12 @@ body{
 .testimonials-slider{
     margin-bottom: 60px;
 }
+
+.companies-slider .satisfied-logo img{
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%)
+}
+.companies-slider .satisfied-logo img:hover{
+    filter: grayscale(0%)
+}
