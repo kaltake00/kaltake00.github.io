@@ -12,6 +12,13 @@ body{
     overflow: hidden;
 }
 
+.iScrollIndicator{
+    background: #16c0f0 !important;
+}
+.iScrollVerticalScrollbar{
+    width: 4px !important;
+}
+
 .navbar {
     background: #2b3d4f;
     position: fixed;
@@ -682,7 +689,8 @@ body{
 
 .testimonials .container{
     height: 100%;
-    padding: 75px 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .testimonials .testimonials-slider .testimonial-box{
@@ -781,10 +789,32 @@ body{
 }
 
 .testimonials-slider{
-    margin-bottom: 60px;
+    margin-bottom: 105px !important;
 }
 
 .companies-slider .satisfied-logo img{
     height: 60px;
     object-fit: contain;
+    width: 175px;
+}
+
+.companies-slider .satisfied-logo.webmajstor img {
+    filter: hue-rotate(90deg)
+}
+
+.slick-dots{
+    bottom: -60px !important;
+}
+
+.slick-dots li button:before{
+    color: transparent !important;
+    border: 1px solid #16c0f0;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 40px;
+    opacity: .75 !important;
+}
+
+.slick-dots li.slick-active button:before{
+    background-color: #16c0f0 !important;
 }
