@@ -1,0 +1,73 @@
+
+
+@media only screen and (max-width: 600px) {
+
+    .about-me .container{
+        padding-bottom: 45px;
+    }
+    
+    .intro h1{
+        text-align: center;
+    }
+
+    .welcome-socials.mobile-hidden{
+        display: flex;
+        position: relative;
+        top: unset;
+        left: unset;
+        margin-top: 100px;
+    }
+    .welcome-socials.mobile-hidden::before{
+        transform: unset;
+        top: -35px;
+        left: unset;
+    }
+    .welcome-socials.mobile-hidden::after{
+        width: 50px;
+        height: 2px;
+        top: -10px;
+        left: 20px;
+    }
+    .welcome-socials.mobile-hidden li{
+        margin-right: 15px;
+    }
+
+    /* RESUME SECTION */
+
+    .resume .container {
+        padding: 5px 20px;
+    }
+
+    .about-image{
+        margin-bottom: 35px;
+    }
+
+    .resume .timeline {
+        margin-top: 15px !important;
+    }
+
+    .resume .timeline:before {
+        top: -36px !important;
+    }
+
+    .resume .timeline ul {
+        padding-top: 55px;
+    }
+
+    .resume .timeline ul li {
+        margin-bottom: 40px;
+        overflow: visible;
+    }
+
+    .resume .timeline ul li:before {
+        top: -40px !important;
+    }
+
+    .resume .timeline ul li:nth-child(even) .timeline-content, .resume .timeline ul li:nth-child(odd) .timeline-content {
+        width: 100%;
+        float: none;
+        margin-bottom: 60px;
+    }
+
+
+}

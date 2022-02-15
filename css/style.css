@@ -204,6 +204,9 @@ body{
     color: #16c0f0;
 }
 
+.mobile-hidden{
+    display: none;
+}
 
 /* FullPage Navigation */ 
 
