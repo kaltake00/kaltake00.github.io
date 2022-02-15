@@ -53,7 +53,7 @@
                         <a class="main-btn" href="#">Download CV</a>
                     </div>
 
-                    <ul class="list-unstyled welcome-socials mobile-hidden">
+                    <ul class="list-unstyled welcome-socials desktop-hidden">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -62,7 +62,7 @@
                     </ul>
                 </div>
 
-                <ul class="list-unstyled welcome-socials">
+                <ul class="list-unstyled welcome-socials mobile-hidden">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -564,14 +564,20 @@
                     breakpoint: 750,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        dots: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        dots: false
                     }
                 },
             ]

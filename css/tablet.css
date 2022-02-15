@@ -9,26 +9,29 @@
     .intro h1{
         text-align: center;
     }
-
     .welcome-socials.mobile-hidden{
+        display: none;
+
+    }
+    .welcome-socials.desktop-hidden{
         display: flex;
         position: relative;
         top: unset;
         left: unset;
         margin-top: 100px;
     }
-    .welcome-socials.mobile-hidden::before{
+    .welcome-socials.desktop-hidden::before{
         transform: unset;
         top: -35px;
         left: unset;
     }
-    .welcome-socials.mobile-hidden::after{
+    .welcome-socials.desktop-hidden::after{
         width: 50px;
         height: 2px;
         top: -10px;
         left: 20px;
     }
-    .welcome-socials.mobile-hidden li{
+    .welcome-socials.desktop-hidden li{
         margin-right: 15px;
     }
 
