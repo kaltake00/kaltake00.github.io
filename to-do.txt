@@ -11,8 +11,3 @@ Kreirati modal koji će se otvarati IFRAME koji će se dinamički mijenati
 Kako kreirati formu za portfolio na github-u
 
     - ( https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532 )
-
-
-
-                autoScrolling:true,
-            scrollHorizontally: true,
