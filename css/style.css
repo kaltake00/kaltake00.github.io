@@ -845,6 +845,10 @@ body{
     vertical-align: top !important;
 }
 
+.contact .fp-scrollable{
+    overflow: visible;
+}
+
 .contact .contact-boxes {
     background: #2b3d4f;
     border: 3px solid #374757;
