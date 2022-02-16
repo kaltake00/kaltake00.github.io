@@ -71,14 +71,15 @@
         float: none;
         margin-bottom: 60px;
     }
+    /* Portfolio section */
+    .previewer-header{
+        padding-top: 90px;
+    }
 
     /* Contact section */
-
     .contact{
         padding-top: 35px;
-    }
-    .contact .fp-scrollable{
-        height: 800px !important;
+        padding-bottom: 35px;
     }
 
 
