@@ -72,5 +72,14 @@
         margin-bottom: 60px;
     }
 
+    /* Contact section */
+
+    .contact{
+        padding-top: 35px;
+    }
+    .contact .fp-scrollable{
+        height: 800px !important;
+    }
+
 
 }
