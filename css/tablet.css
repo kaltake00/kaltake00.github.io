@@ -72,8 +72,18 @@
         margin-bottom: 60px;
     }
     /* Portfolio section */
+    .previewModal-content{
+        height: 100vh;
+    }
     .previewer-header{
-        padding-top: 90px;
+        padding-top: 20px;
+    }
+    .previewer-header p{
+        align-items: center;
+        display: flex;
+    }
+    .previewer-header .devices{
+        display: none;
     }
 
     /* Contact section */

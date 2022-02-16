@@ -35,7 +35,13 @@ body{
 }
 
 .logo-text{
-    color: #fff;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 22px;
+}
+.logo-text span{
+    color: #16c0f0;
+    font-weight: 700;
 }
 
 .menu-toggle{
@@ -649,6 +655,7 @@ body{
       height: 100%;
       display: flex;
       justify-content: center;
+      padding-top: 85px;
   }
 
   .website-previewer{
@@ -661,6 +668,8 @@ body{
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
   }
   .previewer-header .devices{
     display: flex;
