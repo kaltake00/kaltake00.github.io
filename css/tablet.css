@@ -72,6 +72,9 @@
         margin-bottom: 60px;
     }
     /* Portfolio section */
+    .previewModal{
+        top: 40px;
+    }
     .previewModal-content{
         height: 100vh;
     }

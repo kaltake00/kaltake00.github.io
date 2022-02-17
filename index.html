@@ -35,6 +35,28 @@
 
 <!-- END OF NAVBAR -->
 
+<div id="previewModal" class="previewModal">
+
+    <!-- Modal content -->
+    <div class="previewModal-content">
+        <!-- <span class="close">&times;</span>
+        <p>Some text in the Modal..</p> -->
+        <div class="previewer-header">
+            <p>Preview of the project</p>  
+            <div class="devices">
+                <div class="scalable-button desktop-button" onclick="document.getElementById('previewer').style.width = '100%'"><i class="fa fa-desktop"></i></div>
+                <div class="scalable-button tablet-button" onclick="document.getElementById('previewer').style.width = '768px'"><i class="fa fa-tablet-screen-button"></i></div>
+                <div class="scalable-button mobile-button" onclick="document.getElementById('previewer').style.width = '425px'"><i class="fa fa-mobile-screen-button"></i></i></div>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+        <div class="resizable-frame" >
+            <iframe id="previewer" class="website-previewer" src="" name="search_iframe" frameborder="0"></iframe>
+        </div>
+        </div>
+    
+    </div>
+
     <div class="pages-wrapper" id="fullscreen-page">
         <div class="section" id="particles-js">
             <!-- start of particles -->
@@ -163,27 +185,6 @@
 
         <div class="portfolio section">
 
-            <div id="previewModal" class="previewModal">
-
-                <!-- Modal content -->
-                <div class="previewModal-content">
-                  <!-- <span class="close">&times;</span>
-                  <p>Some text in the Modal..</p> -->
-                  <div class="previewer-header">
-                    <p>Preview of the project</p>  
-                    <div class="devices">
-                        <div class="scalable-button desktop-button" onclick="document.getElementById('previewer').style.width = '100%'"><i class="fa fa-desktop"></i></div>
-                        <div class="scalable-button tablet-button" onclick="document.getElementById('previewer').style.width = '768px'"><i class="fa fa-tablet-screen-button"></i></div>
-                        <div class="scalable-button mobile-button" onclick="document.getElementById('previewer').style.width = '425px'"><i class="fa fa-mobile-screen-button"></i></i></div>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
-                  <div class="resizable-frame" >
-                    <iframe id="previewer" class="website-previewer" src="" name="search_iframe" frameborder="0"></iframe>
-                  </div>
-                </div>
-              
-            </div>
 
             <div class="container">
                 <div class="main-title">
@@ -505,6 +506,7 @@
         }
         Array.prototype.forEach.call(btn, function(element) {
             element.addEventListener('click', function() {
+                document.documentElement.scrollTop = 0;
                 modal.style.display = "block";
             });
         });
