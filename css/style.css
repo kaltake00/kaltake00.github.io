@@ -886,6 +886,7 @@ body{
 }
 .contact .contact-box .content-box {
     font-size: 13px;
+    text-align: center;
 }
 .contact .contact-box .content-box p {
     margin-bottom: 0;
